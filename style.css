@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: #611ECB;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.table-container{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:  0 4px 10px rgba(red, green, blue, alpha);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead th{
+    text-align: left;
+    border-bottom: 2px solid #EEE3FF;
+    padding: 10px;
+}
+tbody td{
+
+padding: 10px;
+border-bottom: 1px solid #EEE3FF;
+}
+
+.star{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    direction: rtl;
+}
+.star .star{
+    font-size: 20px;
+    color: #EEE3FF;
+    cursor: pointer;
+    transition: color 0.2s ease, transofrm 0.2s ease;
+}
+.star .star:hover{
+    color: #6926D7;
+    transform: scale(1.1);
+}
+.star .star:hover ~  .star{
+    color: #6926D7;
+}
+.star.full{
+    color: #EEE3FF;
+}
+.star.selected{
+    color: #6926D7;
+}
